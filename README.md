@@ -9,12 +9,6 @@ https://doi.org/10.5281/zenodo.21134695
 **SmartHealth-IoT** is a Python-based simulation framework for remote patient monitoring using virtual smartwatch physiological data streams.
 
 The framework generates synthetic wearable sensor data, emulates IoT communication, extracts temporal features, trains a lightweight machine learning model (**VitalBoostNet**), and produces intelligent health alerts by combining machine learning predictions with physiological rule-based reasoning.
-
-> **Note**
->
-> This repository is intended for **research and educational purposes only**.
-> It does **not** use real patient data or physical wearable devices.
-
 ---
 
 # Features
