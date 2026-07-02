@@ -371,8 +371,4 @@ You may choose one of the following licenses:
 
 ---
 
-# Disclaimer
 
-This repository is intended **only for research and educational purposes**.
-
-It is **not** a medical device and must **not** be used for clinical diagnosis, treatment, or emergency medical decision-making.
