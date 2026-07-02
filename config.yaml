@@ -1,0 +1,48 @@
+project:
+  name: SmartHealth-IoT
+  random_seeds: [42, 52, 62]
+
+data:
+  n_patients: 30
+  packets_per_patient: 150
+  sampling_interval_seconds: 1
+  abnormal_event_probability: 0.45
+  min_events_per_abnormal_patient: 1
+  max_events_per_abnormal_patient: 3
+  event_min_duration: 25
+  event_max_duration: 50
+  output_csv: data/generated/virtual_patient_streams.csv
+
+features:
+  window_size: 30
+  smoothing_size: 5
+  step_size: 1
+  normalize: true
+  output_csv: data/features/smarthealth_features.csv
+
+splitting:
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
+
+model:
+  vitalboostnet:
+    learning_rate: 0.05
+    num_leaves: 31
+    max_depth: 7
+    n_estimators: 300
+    min_child_samples: 20
+    feature_fraction: 0.90
+    bagging_fraction: 0.80
+    bagging_freq: 5
+    reg_alpha: 0.01
+    reg_lambda: 0.10
+    early_stopping_rounds: 30
+
+alert:
+  fusion_alpha: 0.50
+  primary_strategy: or
+
+scalability:
+  patient_loads: [1, 10, 25]
+  packets_per_patient: 100

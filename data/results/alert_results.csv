@@ -1,0 +1,2 @@
+event_sensitivity,false_alert_rate,missed_event_rate,mean_alert_latency_ms,tp,tn,fp,fn
+0.8951048951048951,0.006493506493506494,0.1048951048951049,0.027003618182495925,128,459,3,15

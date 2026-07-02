@@ -1,0 +1,6 @@
+proposed,baseline,metric,mean_difference,paired_ttest_p,wilcoxon_p
+VitalBoostNet,Logistic Regression,macro_f1,0.15095997317431725,0.07537403500893276,0.25
+VitalBoostNet,Linear SVM-SGD,macro_f1,0.19092393988464595,0.1445032249603772,0.25
+VitalBoostNet,Random Forest,macro_f1,-0.041454442641746435,0.33111767901247935,0.5
+VitalBoostNet,Extra Trees,macro_f1,0.0016003462553905168,0.9316686315912752,0.75
+VitalBoostNet,Majority Dummy,macro_f1,0.42997206133663096,0.029764666583396576,0.25
