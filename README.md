@@ -1,3 +1,4 @@
+https://doi.org/10.5281/zenodo.21134695
 # SmartHealth-IoT
 
 **A Simulation-Based IoT Remote Patient Monitoring Framework Using Virtual Wearable Physiological Data Streams**
